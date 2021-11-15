@@ -19,6 +19,6 @@ set     version       09-30-2021.R2
 set     path          /usr/local/gamess
 
 
-setenv          GAMESSPATH             $prefix
+setenv          GAMESSPATH             $path
 setenv          MKL_THREADING_LAYER    GNU
 prepend-path    PATH                   /usr/local/gamess
