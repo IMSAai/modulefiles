@@ -1,0 +1,24 @@
+#%Module1.0#####################################################################
+##
+## gamess modulefile
+##
+proc ModulesHelp { } {
+        global version path
+
+        puts stderr "\tgamess - enables the use of the GAMESS chemistry software"
+        puts stderr "\n\tMore information: https://www.msg.chem.iastate.edu/gamess/"
+        puts stderr "\n\tThis adds rungms and other GAMESS tools to the PATH"
+        puts stderr "\tenvironment variables."
+        puts stderr "\n\tVersion $version\n"
+}
+
+module-whatis   "loads the GAMESS chemistry module"
+
+# for Tcl script use only
+set     version       09-30-2021.R2
+set     path          /usr/local/gamess
+
+
+setenv          GAMESSPATH             $prefix
+setenv          MKL_THREADING_LAYER    GNU
+prepend-path    PATH                   /usr/local/gamess
