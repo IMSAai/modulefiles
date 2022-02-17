@@ -16,7 +16,7 @@ module-whatis   "loads the GAMESS chemistry module"
 
 # for Tcl script use only
 set     version       09-30-2021.R2
-set     path          /usr/local/gamess
+set     path          /home/tools/gamess
 
 
 setenv          GAMESSPATH             $path
