@@ -21,4 +21,4 @@ set     path          /usr/local/gamess
 
 setenv          GAMESSPATH             $path
 setenv          MKL_THREADING_LAYER    GNU
-prepend-path    PATH                   /usr/local/gamess
+prepend-path    PATH                   /home/tools/gamess
